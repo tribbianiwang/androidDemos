@@ -30,12 +30,21 @@ class MainActivity : AppCompatActivity() {
 //       }
       val  coroutinContext: CoroutineContext = EmptyCoroutineContext
         val coroutineScope = CoroutineScope(coroutinContext)
-        coroutineScope.launch(Dispatchers.IO) {
-            Log.d(TAG,"threadname:io"+Thread.currentThread().name)
-            coroutineScope.launch (Dispatchers.Main){
-                Log.d(TAG,"threadname:main"+Thread.currentThread().name)
-            }
+//        coroutineScope.launch(Dispatchers.IO) {
+//            Log.d(TAG,"threadname:io"+Thread.currentThread().name)
+//            coroutineScope.launch (Dispatchers.Main){
+//                Log.d(TAG,"threadname:main"+Thread.currentThread().name)
+//            }
+//        }
+
+        coroutineScope.launch(Dispatchers.Main){
+
+         withContext(Dispatchers.IO){
+             Log.d(TAG,"threadname:"+Thread.currentThread().name)
+         }
+            Log.d(TAG,"threadname:main"+Thread.currentThread().name)
         }
+
 
     }
 
