@@ -7,10 +7,11 @@ import android.util.Log
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class MainActivity : AppCompatActivity() {
 
-    val TAG = "MainActivity"
+    val TAG = "MainActivity--"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG,"World!") // 在延迟后打印输出
         }
         Log.d(TAG,"Hello,") // 协程已在等待时主线程还在继续
-        Thread.sleep(2000L) // 阻塞主线程 2 秒钟来保证 JVM 存活
+       runBlocking {// 但是这个表达式阻塞了主线程
+           delay(2000L)// ……我们延迟 2 秒来保证 JVM 的存活
+       }
     }
 }
