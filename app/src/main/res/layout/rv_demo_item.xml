@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_gender"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="gender"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_age"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="age"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_telephone"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="telephone"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_address"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="address"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_birthday"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="birthday"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_hobby"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="hobby"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_job"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="job"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_jobage"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="jobage"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+    <TextView
+            android:id="@+id/tv_ismarried"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="26sp"
+            android:textColor="@android:color/black"
+            />
+
+
+
+</LinearLayout>
