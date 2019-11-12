@@ -1,5 +1,6 @@
 package com.wl.androiddemos.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ class RvDemoAdapter(datalist: ArrayList<RvDataBean>) :RecyclerView.Adapter<Recyc
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        Log.d("rvDemoAdapter","oncreateviewholder")
 
       return ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_demo_item,parent,false))
 

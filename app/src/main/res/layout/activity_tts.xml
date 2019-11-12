@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TTSActivity">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/et_speak_content"
+            android:hint="输入文字"
+            android:text="测试离线语音"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_margin="15dp"
+            />
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="播放"
+            android:id="@+id/bt_play"
+        />
+
+
+
+
+
+</LinearLayout>
