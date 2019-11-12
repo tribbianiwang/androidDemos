@@ -4,14 +4,29 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".JiGuangTTSActivity">
+        android:orientation="vertical">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/et_speak_content"
+            android:hint="输入文字"
+            android:text="欢迎光临土大力"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_margin="15dp"
+            />
 
     <Button
-
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="clicktoSPeank"
-            android:id="@+id/bt_say"
+            android:text="播放"
+            android:id="@+id/bt_play"
             />
+
+
+
+
 
 </LinearLayout>

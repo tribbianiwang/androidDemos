@@ -43,14 +43,16 @@ class JiGuangTTSActivity : AppCompatActivity() {
 
         })
 
-        mTts.setParameter( SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_LOCAL );
+        mTts.setParameter( SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_LOCAL );//本地离线
+        mTts.setParameter( ResourceUtil.TTS_RES_PATH, getResourcePath() );//本地离线
+//        mTts.setParameter( SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_CLOUD );//在线
 
-        mTts.setParameter( ResourceUtil.TTS_RES_PATH, getResourcePath() );
 
 
-         var strTextToSpeech  = "科大讯飞，让世界聆听我们的声音";
-        bt_say.setOnClickListener {
-            mTts.startSpeaking( strTextToSpeech, object:SynthesizerListener{
+
+
+        bt_play.setOnClickListener {
+            mTts.startSpeaking( et_speak_content.text.toString(), object:SynthesizerListener{
                 override fun onBufferProgress(p0: Int, p1: Int, p2: Int, p3: String?) {
                     Log.d(TAG, "onBufferProgress")
                 }
