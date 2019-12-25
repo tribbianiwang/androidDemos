@@ -12,7 +12,7 @@
             android:background="@android:color/transparent"
             android:id="@+id/et_speak_content"
             android:hint="输入文字"
-            android:text="欢迎光临土大力"
+            android:text="欢迎光临土大力it部门"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:layout_margin="15dp"

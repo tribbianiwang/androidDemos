@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
+apply from: 'tinkerpatch.gradle'
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -32,6 +32,23 @@ android {
         }
 
     }
+
+    signingConfigs {
+        debug {
+            storeFile file('F:/desktop/tudali')
+            storePassword "tdlit888"
+            keyAlias "tudali"
+            keyPassword "tdlit888"
+        }
+
+        release {
+            storeFile file('F:/desktop/tudali')
+            storePassword "tdlit888"
+            keyAlias "tudali"
+            keyPassword "tdlit888"
+        }
+
+    }
 }
 
 dependencies {
@@ -48,4 +65,7 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines"
     implementation 'androidx.recyclerview:recyclerview:1.1.0-rc01'
     implementation files('libs/Msc.jar')
+    // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
+    annotationProcessor ("com.tinkerpatch.tinker:tinker-android-anno:1.9.14.5")
+    implementation("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.14.5")
 }

@@ -52,6 +52,9 @@ public class IatDemo extends Activity implements OnClickListener {
 	// 用HashMap存储听写结果
 	private HashMap<String, String> mIatResults = new LinkedHashMap<String, String>();
 
+
+
+
 	private EditText mResultText;
 	private EditText showContacts;
 	private TextView languageText;
