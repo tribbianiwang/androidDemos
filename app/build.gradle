@@ -66,6 +66,11 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0-rc01'
     implementation files('libs/Msc.jar')
     // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
-    annotationProcessor ("com.tinkerpatch.tinker:tinker-android-anno:1.9.13")
+    annotationProcessor("com.tinkerpatch.tinker:tinker-android-anno:1.9.13")
     implementation("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.12")
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-beta01'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha01'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation "com.squareup.okhttp3:okhttp:4.7.2"
 }

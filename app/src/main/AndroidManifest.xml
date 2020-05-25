@@ -17,7 +17,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 如需使用人脸识别，还要添加：摄相头权限，拍照需要用到 -->
     <uses-permission android:name="android.permission.CAMERA" />
 
-
     <dist:module dist:instant="true" />
 
     <application
@@ -28,17 +27,18 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".JiGuangTTSActivity">
+        <activity android:name=".CoroutinesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TTSActivity">
+        <activity android:name=".JiGuangTTSActivity">
 
         </activity>
-        <activity android:name=".HorizontalVerticalActivity"></activity>
+        <activity android:name=".TTSActivity"></activity>
+        <activity android:name=".HorizontalVerticalActivity" />
         <activity android:name=".MainActivity" />
     </application>
 
