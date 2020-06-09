@@ -23,4 +23,6 @@ class MyViewModel: ViewModel() {
     fun getResult():String{
         return "this is a test getResult"
     }
+
+
 }

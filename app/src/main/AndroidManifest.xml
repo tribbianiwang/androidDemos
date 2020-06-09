@@ -27,17 +27,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".TestThreadActivity">
+
+        </activity>
         <activity android:name=".CoroutinesActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".JiGuangTTSActivity">
-
-        </activity>
-        <activity android:name=".TTSActivity"></activity>
+        <activity android:name=".JiGuangTTSActivity"></activity>
+        <activity android:name=".TTSActivity" />
         <activity android:name=".HorizontalVerticalActivity" />
         <activity android:name=".MainActivity" />
     </application>

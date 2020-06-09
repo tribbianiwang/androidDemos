@@ -3,10 +3,7 @@ package com.wl.androiddemos
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.*
 import com.wl.androiddemos.bean.ResultBean
 import com.wl.androiddemos.viewmodel.MyViewModel
 import kotlinx.android.synthetic.main.activity_coroutines.*
@@ -25,6 +22,8 @@ class CoroutinesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_coroutines)
         myViewModel =  ViewModelProviders.of(this).get(MyViewModel::class.java)
+
+
 
 
         lifecycleScope.launch {
