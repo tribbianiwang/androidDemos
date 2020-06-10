@@ -3,54 +3,45 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical">
-
-
-
+>
     <Button
-            android:id="@+id/bt_center"
+            android:id="@+id/bt_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:text="A"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:text="center"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="top"
-            app:layout_constraintBottom_toTopOf="@id/bt_center"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:text="B"
+            android:id="@+id/bt_b"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@id/bt_a"
+            app:layout_constraintTop_toTopOf="@id/bt_a"
+            android:visibility="gone"
             />
 
     <Button
+            android:id="@+id/bt_c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="left"
-            app:layout_constraintBaseline_toBaselineOf="@id/bt_center"
-            app:layout_constraintRight_toLeftOf="@id/bt_center"
+            app:layout_constraintStart_toEndOf="@id/bt_b"
+            app:layout_constraintTop_toTopOf="@id/bt_b"
+            android:text="C"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+
             />
 
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RIGHT"
-            app:layout_constraintBaseline_toBaselineOf="@id/bt_center"
-            app:layout_constraintLeft_toRightOf="@id/bt_center"
-        />
 
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="bottom"
-            app:layout_constraintTop_toBottomOf="@id/bt_center"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
