@@ -4,44 +4,18 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
 >
+   
     <Button
-            android:id="@+id/bt_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="UNO"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintVertical_bias="0.3"
             />
-
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="B"
-            android:id="@+id/bt_b"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            app:layout_constraintStart_toEndOf="@id/bt_a"
-            app:layout_constraintTop_toTopOf="@id/bt_a"
-            android:visibility="gone"
-            />
-
-    <Button
-            android:id="@+id/bt_c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/bt_b"
-            app:layout_constraintTop_toTopOf="@id/bt_b"
-            android:text="C"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-
-            />
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
