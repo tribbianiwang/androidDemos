@@ -9,7 +9,7 @@ android {
     buildToolsVersion "29.0.0"
     defaultConfig {
         applicationId "com.wl.androiddemos"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -18,7 +18,13 @@ android {
         ndk {
             abiFilters "arm64-v8a", "armeabi-v7a"
         }
+
+
+
     }
+
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -49,6 +55,11 @@ android {
         }
 
     }
+
+
+
+
+
 }
 
 dependencies {
@@ -73,4 +84,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation "com.squareup.okhttp3:okhttp:4.7.2"
+
+    implementation 'androidx.ui:ui-tooling:0.1.0-dev02'
+    implementation 'androidx.ui:ui-layout:0.1.0-dev02'
+    implementation 'androidx.ui:ui-material:0.1.0-dev02'
+
+
 }
